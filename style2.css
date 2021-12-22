@@ -11,7 +11,6 @@
 nav{
     height: 80px;
     display: flex;
-    justify-content: center;
 }
 
 img{
@@ -41,6 +40,16 @@ li{
     list-style-type: none;
 }
 
+p{
+    margin-top: 24px;
+    padding-left: 16px;
+}
+
+.bold{
+    text-decoration: bold;
+    color: blue;
+}
+
 
 a:hover{
     text-decoration: underline;
@@ -56,6 +65,10 @@ a:hover{
     font-size: 20px;
     color: black;
     font-weight: bold;
+}
+
+nav{
+    justify-content: center;
 }
 
 
@@ -205,15 +218,10 @@ footer{
 
 
 @media (max-width: 660px){
-    .nav__link{
-        display: flex;
-        justify-content: space-between;
-        margin-left: 24px;
+    p{
+        margin-top: 10px;
     }
-    #explore{
+    footer{
         margin-top: 1100px;
-    }
-    .header__container{
-        margin-top: 24px;
     }
 }
