@@ -43,6 +43,7 @@ li{
 p{
     margin-top: 24px;
     padding-left: 16px;
+    text-decoration: none;
 }
 
 .bold{
@@ -69,6 +70,30 @@ a:hover{
 
 nav{
     justify-content: center;
+}
+
+
+.row{
+    flex-direction: column;
+}
+
+.country--name{
+    flex-direction: column;
+    align-items: center;
+}
+
+.country--list{
+    margin-top: 4px;
+}
+
+.row{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+a{
+    color: rgb(66, 65, 65);
 }
 
 
@@ -223,5 +248,25 @@ footer{
     }
     footer{
         margin-top: 1100px;
+    }
+    .container{
+        margin-top: 400px;
+    }
+}
+
+@media (max-width: 380px){
+    .gift__card--description{
+        margin-top: 10px;
+        font-size: 16px;
+        padding-right: 4px;
+    }
+    footer{
+        margin-top: 500px;
+    }
+    .container{
+        margin-top: 600px;
+    }
+    .nav__link{
+        margin-left: 24px;
     }
 }
