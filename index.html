@@ -1,62 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
-    <script src="https://kit.fontawesome.com/c8e4d183c2.js"></script>
-</head>
-<body>
-<section id="landing">
-    <nav>
-        <div class="nav__container">
-        <ul class="nav__links">
-            <li><a href="#" class="nav__link">Home</a></li>
-            <li><a href="#" class="nav__link">Transfer</a></li>
-            <li><a href="#" class="nav__link">Sell</a></li>
-            <li><a href="#" class="nav__link">Invest</a></li>
-        </ul>
-        </div>
-        
-    </nav>
-    <header>
-        <div class="header__container">
-            <div class="header__description">
-        <h1> <span class="black"> Lorem, ipsum dolor sit amet consectetur adipisicing elit.</span></h1>
-        <h2> <span class="black"> Lorem, ipsum dolor sit amet.</span></h2>
-        <button class="btn">Buy Now</button>
-            </div>
-            <figure class="header__img--wrapper">
-            <img src="./Bitcoin.png" alt="">
-            </figure>
-        </div>
-    </header>
-</section>    
-<section id="explore">
-    <div class="container">
-        <div class="row row__column">
-            <h2>Explore Gift Cards</h2>
-            <a href="./index2.html"><button class="btn">Browse Cards</button> </a>
-        </div>
-    </div>
-</section>
-</body>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recruiting Hive</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
 </head>
 
-<footer>
-<div class="container footer__container">
-    <div class="row row__column">
-    <div class="footer__list">
-    <a href="" class="footer__link">Home</a>
-    <a href="" class="footer__link">Transfer</a>
-    <a href="" class="footer__link">Sell</a>
-    <a href="" class="footer__link">Invest</a>
+<body>
+  <section id="landing">
+    <nav>
+      <div class="nav__container">
+        <img class="logo" src="assets/Capture.PNG 2i.PNG" alt="">
+        <ul class="nav__links">
+          <li><a href="#" class="nav__link">Home</a></li>
+          <li><a href="#" class="nav__link">Contact</a></li>
+          <li><a href="#" class="nav__link nav__link--primary">Rewards</a></li>
+        </ul>
+        <button class="btn__menu" onclick="openMenu()">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="menu__backdrop">
+          <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+            <i class="fas fa-times"></i>
+          </button>
+          <ul class="menu__links">
+            <li class="menu__list">
+              <a href="#" class="menu__link" onclick="closeMenu()">Home</a>
+            </li>
+            <li class="menu__list">
+              <a href="#features" class="menu__link" onclick="closeMenu()">Investments</a>
+            </li>
+            <li class="menu__list">
+              <a class="menu__link no-cursor" onclick="closeMenu()">Contacts</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header>
+      <div class="header__container">
+        <div class="header__description">
+          <h1>View Great deals and invest with us</h1>
+          <h2>Find your dream changing investment <span class="purple">Dream</span></h2>
+          <a href="#features">
+            <button class="btn">Browse investments</button>
+          </a>
+        </div>
+        <figure class="header__img--wrapper">
+          <img src="" alt="">
+        </figure>
+      </div>
+    </header>
+  </section>
+
+  <main>
+    <section id="highlights">
+      <div class="container">
+        <div class="row">
+          <h2 class="section__title">
+            Why choose <span class="purple">Hive</span>
+          </h2>
+          <div class="highlight__wrapper">
+            <div class="highlight">
+              <div class="highlight__img">
+                <i class="fas fa-bolt"></i>
+              </div>
+              <h3 class="highlight__subtitle">
+                Easy and Quick
+              </h3>
+              <p class="highlight__para">
+                Investments and rewards for your choosing.
+              </p>
+            </div>
+            <div class="highlight">
+              <div class="highlight__img">
+                <i class="fas fa-book-open"></i>
+              </div>
+              <h3 class="highlight__subtitle">
+                Portfolio
+              </h3>
+              <p class="highlight__para">
+                Will be able to create a portfolio.
+              </p>
+            </div>
+            <div class="highlight">
+              <div class="highlight__img">
+                <i class="fas fa-tags"></i>
+              </div>
+              <h3 class="highlight__subtitle">
+                Easy access
+              </h3>
+              <p class="highlight__para">
+                Anyone can use this!.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features">
+      <div class="container">
+        <div class="row">
+          <h2 class="section__title">
+            Featured <span class="purple">Investments</span>
+          </h2>
+          <div class="Investments">
+            <div class="Invest">
+              <figure class="Invest__img--wrapper">
+                <img class="Invest__img" src="/assets/istockphoto-1145592947-612x612.jpg" alt="">
+              </figure>
+              <div class="Invest__title">
+                Crypto Currency
+              </div>
+              <div class="Invest__ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <div>
+                <span class=""></span>
+              </div>
+            </div>
+            <div class="Invest">
+              <figure class="Invest__img--wrapper">
+                <img class="Invest__img" src="/assets/customers-get-reward-points.png" alt="">
+              </figure>
+              <div class="Invest__title">
+                Rewards
+              </div>
+              <div class="Invest__ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <div class="Invest__price">
+                <span class="Invest__price--normal"></span> 
+              </div>
+            </div>
+            <div class="Invest">
+              <figure class="Invest__img--wrapper">
+                <img class="Invest__img" src="/assets/istockphoto-1145592947-612x612.jpg" alt="">
+              </figure>
+              <div class="Invest__title">
+                Crypto
+              </div>
+              <div class="Invest__ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <div class="Invest__price">
+                <span class="Invest__price--normal"></span>
+              </div>
+            </div>
+            <div class="Invest">
+              <figure class="Invest__img--wrapper">
+                <img class="Invest__img" src="/assets/customers-get-reward-points.png" alt="">
+              </figure>
+              <div class="Invest__title">
+                Rewards
+              </div>
+              <div class="Invest__ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <div class="Invest__price">
+                <span class="Invest__price--normal"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="explore">
+      <div class="container">
+        <div class="row row__column">
+          <h2>Explore more <span class="purple">Invests</span></h2>
+          <a href="#features">
+            <button class="btn">Browse Invests</button>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="row row__column">
+        <a href="#">
+          <figure class="footer__logo">
+            <img src="assets/Library.svg" class="footer__logo--img" alt="">
+          </figure>
+        </a>
+        <div class="footer__list">
+          <a href="#" class="footer__link">Home</a>
+          <a class="footer__link no-cursor">About</a>
+          <a href="#features" class="footer__link">Invests</a>
+          <a class="footer__link no-cursor">Contact</a>
+        </div>
+        <div class="footer__copyright">Copyright &copy; 2021 Hive</div>
+      </div>
     </div>
-    <div class="footer__copyright">Copyright &copy;2021HiveRecuruitement</div>
-    </div>
-</div>
-</footer>
+  </footer>
 </body>
+
 </html>
